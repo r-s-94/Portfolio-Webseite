@@ -1,0 +1,3401 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+$headline-font-family: "Audiowide", sans-serif;
+$text-font-family: "Open Sans", sans-serif;
+$gray-background-color: #dbdbdb;
+$primary-color: #2563eb;
+$secondary-color: #0f172a;
+$button-hover-color: rgb(59 130 246);
+$primary-text-color: #94a3b8;
+$secondary-text-color: #cbd5e1;
+$black-background-color: black;
+$border-color: #fff;
+$section-border-color: #bdbdbd;
+
+@mixin column-flex-direction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin column-flex-direction-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+@mixin row-flex-direction {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin gray-border-for-section {
+  border: 0.5rem solid #e0e0e0;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+@mixin blue-border-for-section {
+  border: 0.3rem solid;
+  border-radius: 0.2rem;
+  @include box-adjustment();
+}
+
+@mixin blue-button-style {
+  border: none;
+  background-color: $primary-color;
+  color: white;
+}
+
+@mixin blue-button-hover-style {
+  background-color: white;
+  color: $primary-color;
+}
+
+/*@mixin headline-button-properties {
+  border: 0.1rem solid white;
+  background-color: #222222;
+  color: #80d8ff;
+  border-radius: 0.1rem;
+}*/
+
+/*@mixin headline-button-hover-properties {
+  background-color: white;
+  border-color: black;
+}*/
+
+@mixin white-button-style {
+  border: 2px solid #006db5;
+  background-image: linear-gradient(white, #e0e0e0);
+  color: #039be5;
+}
+
+@mixin white-button-hover-style {
+  border: 1px solid white;
+  background-image: linear-gradient(#039be5, #006db5);
+  color: white;
+}
+
+@mixin box-adjustment() {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;*/
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  background-color: #020620;
+}
+
+/*background-image: linear-gradient(
+    to right,
+    #e2e4e7,
+    white,
+    white,
+    white,
+    #e2e4e7
+  );*/
+
+/*.button {
+  @include center-content();
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.no-underline:hover {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}*/
+
+@media screen and (min-width: 1650px) {
+  .head-section {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__developer-div {
+      width: 50%;
+      margin-left: 10%;
+    }
+
+    &__developer-img {
+      width: 6.3rem;
+      height: 6.3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &__headline-div {
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &__description-headline {
+    }
+
+    &__developer-name {
+      font-weight: 600;
+    }
+
+    &__main-headline {
+      margin: 0;
+      font-size: 3.5rem;
+      color: white;
+      line-height: 3.5rem;
+    }
+
+    &__focus-headline {
+      /*background: linear-gradient(to right, #0288d1, #00b400);*/
+      background: linear-gradient(to right, #3b82f6, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &__developer-text {
+      margin: 2.5rem 0;
+      font-size: 1.2rem;
+      color: $primary-text-color;
+    }
+
+    &__social-media-link-div {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__social-media-img {
+      width: 3rem;
+    }
+
+    &__show-projects-button {
+      margin-bottom: 1.5rem;
+      padding: 0.7rem 2rem;
+      display: flex;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      /*background-color: #305cde;*/
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    &__show-projects-button:hover {
+      background-color: $button-hover-color;
+    }
+
+    &__show-projects-icon {
+      width: 1.4rem;
+    }
+
+    &__decorection-div {
+      width: 50%;
+      margin-right: 9%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__technology-img {
+      width: 31rem;
+    }
+  }
+
+  .project-section {
+    @include column-flex-direction();
+    margin-top: 5rem;
+    /*background-color: black;*/
+    /*background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+
+    &__h2-headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.3rem;
+      margin: 5rem auto 0 auto;
+      color: white;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      margin: 3rem 0;
+      color: $primary-text-color;
+    }
+
+    &__project-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: grid;
+      grid-template-columns: 64% 31%;
+      column-gap: 1rem;
+    }
+
+    &__the-first-two-projects-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__crm-program {
+      margin: 10rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__italiner,
+    &__online-shop,
+    &__open-pure-net {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .shop-headline {
+    }
+
+    &__application-img-description-div-reverse {
+    }
+
+    &__application-img-description-div {
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    .crm-description-div {
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      font-size: 1.3rem;
+      color: $primary-text-color;
+      line-height: 1.7rem;
+    }
+
+    .crm-description-detail {
+      width: 60%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 3rem auto 0 auto;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem;
+    }
+
+    .platform-technology-div {
+      margin-top: 2.3rem;
+    }
+
+    .shop-technology-div {
+      margin-top: 0.5rem;
+    }
+
+    .italiener-technology-div {
+      margin-top: 2rem;
+    }
+
+    .crm-technology-div {
+      margin-left: 20%;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      margin: 0 auto;
+    }
+
+    &__crm-carousel {
+      width: 62.3rem;
+      margin: 0 5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 267px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 277px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: 30rem;
+    }
+
+    .carousel-button {
+      transform: translateY(-50%);
+      /*background-color: #006db5;*/
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      font-size: 24px;
+      /*padding: 10px;*/
+      width: 2.1rem;
+      height: 3.3rem;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-prev-button {
+      margin-left: 0;
+    }
+
+    &__crm-carousel-next-button {
+      margin-right: 0;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 5rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 5rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    /*.crm-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .four-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .three-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .two-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }*/
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    .mobile-img {
+      height: 30rem;
+      border-radius: 0.1rem;
+    }
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      column-gap: 3rem;
+    }
+
+    /*.crm-button-div {
+    display: flex;
+    margin: -2rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    .crm-button-div {
+      display: flex;
+      column-gap: 7rem;
+    }
+
+    .shop-button-div {
+    }
+
+    .italiener-button-div {
+      margin-top: 6.5rem;
+    }
+
+    &__link {
+      margin: 1rem 0;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 2.5rem;
+      @include center-content();
+      border-radius: 0.2rem;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }
+  }
+
+  .technology-section {
+    @include column-flex-direction();
+    margin-bottom: 5rem;
+    padding: 5rem 0;
+    /*background-color: #00154d;*/
+
+    /*border-radius: 0.2rem;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+    /*linear-gradient(
+      rgba(13, 21, 77, 0.5),
+      rgba(13, 21, 77, 0.5)
+    ),
+  
+  */
+
+    &__h2-headline {
+      margin: 0 auto 2rem auto;
+      font-size: 2.3rem;
+      color: white;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 5rem 0;
+      @include center-content();
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+      @include column-flex-direction();
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+      color: white;
+      text-align: center;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+      @include column-flex-direction();
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    margin: 7rem 0 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+      width: 50%;
+      padding-left: 7rem;
+    }
+
+    &__headline {
+      font-size: 2.3rem;
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 18.4px;
+      margin-right: 0.5rem;
+      color: $primary-text-color;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        font-size: 1.2rem;
+        color: $secondary-text-color;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+      width: 2.5rem;
+    }
+
+    &__linkedin-img {
+      width: 2.5rem;
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      width: 50%;
+      margin-right: 5%;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+
+  .footer-div {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    background-color: $secondary-color;
+
+    &__impressum-link,
+    &__copy-right {
+      color: $primary-text-color;
+      font-size: 0.9rem;
+    }
+  }
+
+  .to-website {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 7rem;
+    font-size: 1.3rem;
+  }
+
+  .to-main-side-icon {
+    margin: 3rem 0 0 5%;
+    width: 2.5rem;
+    color: white;
+  }
+
+  .impressum-headline {
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+  }
+
+  .impressum-info-div {
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    width: 30rem;
+    height: 10rem;
+
+    &__impressum-legal-information {
+      width: 100%;
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 3rem;
+    }
+
+    &__impressum-contact {
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__impressum-name,
+    &__impressum-adress,
+    &__impressum-number,
+    &__impressum-mail {
+      color: white;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .head-section {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__developer-div {
+      width: 50%;
+      margin-left: 5%;
+    }
+
+    &__developer-img {
+      width: 6.3rem;
+      height: 6.3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    &__headline-div {
+      margin-top: 1rem;
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    &__description-headline {
+    }
+
+    &__developer-name {
+      font-weight: 600;
+    }
+
+    &__main-headline {
+      margin: 0;
+      font-size: 3.5rem;
+      color: white;
+      line-height: 3.5rem;
+    }
+
+    &__focus-headline {
+      font-weight: 700;
+      /*background: linear-gradient(to right, #0288d1, #00b400);*/
+      background: linear-gradient(to right, #3b82f6, #22c55e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &__developer-text {
+      margin: 2.5rem 0;
+      font-size: 1.2rem;
+      color: $primary-text-color;
+    }
+
+    &__social-media-link-div {
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__social-media-img {
+      width: 3rem;
+    }
+
+    &__show-projects-button {
+      margin-bottom: 1.5rem;
+      padding: 0.7rem 2rem;
+      display: flex;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      /*background-color: #305cde;*/
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+    }
+
+    &__show-projects-button:hover {
+      background-color: $button-hover-color;
+    }
+
+    &__show-projects-icon {
+      width: 1.4rem;
+    }
+
+    &__decorection-div {
+      width: 50%;
+      margin-right: 3%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__technology-img {
+      width: 31rem;
+    }
+  }
+
+  .project-section {
+    @include column-flex-direction();
+    margin-top: 3rem;
+
+    &__h2-headline {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 2.7rem;
+      margin: 5rem auto 0 auto;
+      color: white;
+    }
+
+    &__text {
+      font-size: 1.3rem;
+      margin: 3rem 0;
+      color: $primary-text-color;
+    }
+
+    &__project-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__the-first-two-projects-div {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 1rem;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__crm-program {
+      width: 100%;
+      margin: 5rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__online-shop,
+    &__open-pure-net {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__italiner {
+      width: 100%;
+      margin-top: 5rem;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .shop-headline {
+    }
+
+    &__application-img-description-div-reverse {
+      width: 75%;
+    }
+
+    &__application-img-description-div {
+      width: 75%;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      font-size: 1.1rem;
+      color: $primary-text-color;
+      line-height: 1.7rem;
+    }
+
+    .platform-description-div,
+    .shop-description-div {
+      margin: 0;
+    }
+
+    .italiener-description-div {
+      margin: 0 7%;
+    }
+
+    .crm-description-div {
+      margin: 0 10%;
+    }
+
+    .crm-description-detail {
+      width: 100%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 3rem auto 0 auto;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem;
+    }
+
+    .platform-technology-div {
+      margin: 2.3rem 0 0 12.3%;
+    }
+
+    .shop-technology-div {
+      margin: 0.5rem 0 0 12.3%;
+    }
+
+    .italiener-technology-div {
+      margin-left: 12.3%;
+    }
+
+    .crm-technology-div {
+      margin-left: 0;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      width: 100%;
+    }
+
+    &__crm-carousel {
+      width: 43rem;
+      margin: 0 5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 267px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 277px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: 20.9rem;
+    }
+
+    .carousel-button {
+      transform: translateY(-50%);
+      /*background-color: #006db5;*/
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      font-size: 24px;
+      /*padding: 10px;*/
+      width: 2.1rem;
+      height: 3.3rem;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-prev-button {
+      margin-left: 0;
+    }
+
+    &__crm-carousel-next-button {
+      margin-right: 0;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 5rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 5rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    .mobile-img {
+      height: 30rem;
+      border-radius: 0.1rem;
+    }
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      column-gap: 3rem;
+    }
+
+    /*.crm-button-div {
+    display: flex;
+    margin: -2rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    .crm-button-div {
+      display: flex;
+      column-gap: 7rem;
+    }
+
+    .shop-button-div {
+    }
+
+    .italiener-button-div {
+      margin: 3rem auto 0 auto;
+    }
+
+    &__link {
+      margin: 1rem 0;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 2.5rem;
+      @include center-content();
+      border-radius: 0.2rem;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }
+  }
+
+  .technology-section {
+    @include column-flex-direction();
+    padding: 5rem 0;
+
+    &__h2-headline {
+      margin: 0 auto;
+      font-size: 2.3rem;
+      color: white;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 5rem 0;
+      @include column-flex-direction();
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+      @include column-flex-direction();
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+      color: white;
+      text-align: center;
+    }
+
+    &__subdivision-div {
+      display: flex;
+      align-items: center;
+      column-gap: 1rem;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+      @include column-flex-direction();
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 3rem;
+    margin: 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+      width: 50%;
+      padding-left: 1%;
+    }
+
+    &__headline {
+      font-size: 2.3rem;
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 18.4px;
+      margin-right: 0.5rem;
+      color: $primary-text-color;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        font-size: 1.2rem;
+        color: $secondary-text-color;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+      width: 2.5rem;
+    }
+
+    &__linkedin-img {
+      width: 2.5rem;
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      width: 40rem;
+      margin-right: 0;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+
+  .footer-div {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    background-color: $secondary-color;
+
+    &__impressum-link,
+    &__copy-right {
+      color: $primary-text-color;
+      font-size: 0.9rem;
+    }
+  }
+
+  //  Impressum
+
+  .to-website {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 7rem;
+    font-size: 1.3rem;
+  }
+
+  .to-main-side-icon {
+    margin: 3rem 0 0 5%;
+    width: 2.5rem;
+    color: white;
+  }
+
+  .impressum-headline {
+    margin: 3rem 0 2rem 0;
+    text-align: center;
+    color: white;
+    font-size: 2.3rem;
+  }
+
+  .impressum-info-div {
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    width: 30rem;
+    height: 10rem;
+
+    &__impressum-legal-information {
+      width: 100%;
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 3rem;
+    }
+
+    &__impressum-contact {
+      color: white;
+      font-size: 1.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__impressum-name,
+    &__impressum-adress,
+    &__impressum-number,
+    &__impressum-mail {
+      color: white;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .head-section {
+    &__developer-div {
+      margin-left: 5%;
+    }
+
+    &__decorection-div {
+      margin-right: 3%;
+    }
+
+    &__technology-img {
+      width: 28rem;
+    }
+  }
+
+  .project-section {
+    &__text {
+      margin: 3rem 7%;
+      font-size: 1.2rem;
+    }
+
+    &__project-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__the-first-two-projects-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__online-shop {
+      margin-top: 5rem;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .shop-headline {
+    }
+
+    &__application-img-description-div-reverse {
+      width: 75%;
+    }
+
+    &__application-img-description-div {
+      width: 75%;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      font-size: 1.3rem;
+      color: $primary-text-color;
+      line-height: 1.7rem;
+    }
+
+    .platform-description-div,
+    .shop-description-div,
+    .italiener-description-div {
+      margin: 0 15%;
+    }
+
+    .crm-description-div {
+      margin: 0 10%;
+    }
+
+    .crm-description-detail {
+      width: 100%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 3rem auto 0 auto;
+      font-size: 1.1rem;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem;
+    }
+
+    .platform-technology-div {
+      margin: 0.3rem 0 0 12.3%;
+    }
+
+    .shop-technology-div {
+      margin: 2rem 0 0 12.3%;
+    }
+
+    .italiener-technology-div {
+      margin-left: 12.3%;
+    }
+
+    .crm-technology-div {
+      margin-left: 0;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      width: 100%;
+    }
+
+    &__crm-carousel {
+      width: 34.5rem;
+      margin: 0 5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 267px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 277px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: 16.8rem;
+    }
+
+    .carousel-button {
+      transform: translateY(-50%);
+      /*background-color: #006db5;*/
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      font-size: 24px;
+      /*padding: 10px;*/
+      width: 2.1rem;
+      height: 3.3rem;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-prev-button {
+      margin-left: 0;
+    }
+
+    &__crm-carousel-next-button {
+      margin-right: 0;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 5rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 5rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    .mobile-img {
+      height: 30rem;
+      border-radius: 0.1rem;
+    }
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      column-gap: 7rem;
+    }
+
+    /*.crm-button-div {
+    display: flex;
+    margin: -2rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    .platform-button-div,
+    .shop-button-div,
+    .italiener-button-div {
+      margin-top: 3rem;
+    }
+
+    .crm-button-div {
+      margin-top: 3rem;
+      display: flex;
+      column-gap: 7rem;
+    }
+
+    /*&__link {
+      margin: 1rem 0;
+      width: 10rem;
+      height: 2rem;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 2.5rem;
+      @include center-content();
+      border-radius: 0.2rem;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }*/
+  }
+
+  .technology-section {
+    &__h2-headline {
+      font-size: 2.3rem;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 3rem 0;
+      @include column-flex-direction();
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+    }
+
+    &__subdivision-div {
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    row-gap: 3rem;
+    margin: 7rem 0 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+      width: 50%;
+      padding-left: 1%;
+    }
+
+    &__headline {
+      font-size: 2.3rem;
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 18.4px;
+      margin-right: 0.5rem;
+      color: $primary-text-color;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        font-size: 1.2rem;
+        color: $secondary-text-color;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 1.3rem;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+      width: 2.5rem;
+    }
+
+    &__linkedin-img {
+      width: 2.5rem;
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      width: 30rem;
+      margin-right: 0;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .head-section {
+    flex-direction: column;
+    row-gap: 5rem;
+
+    &__developer-div {
+      width: 90%;
+      max-width: 43rem;
+      margin-left: 0;
+    }
+
+    &__developer-img {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+
+    &__description-headline {
+      font-size: 1.3rem;
+    }
+
+    &__main-headline {
+      font-size: 2.2rem;
+      line-height: 2.5rem;
+    }
+
+    &__show-projects-button {
+      padding: 0.7rem 1.7rem;
+      font-size: 0.8rem;
+    }
+
+    &__show-projects-icon {
+      width: 1.3rem;
+    }
+
+    &__social-media-img {
+      width: 2.3rem;
+    }
+
+    &__decorection-div {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__technology-img {
+      width: 30rem;
+    }
+  }
+
+  .project-section {
+    &__h2-headline {
+      font-size: 1.9rem;
+    }
+
+    &__text {
+      margin: 0.7rem 7% 3rem 7%;
+      font-size: 1.1rem;
+    }
+
+    &__project-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__the-first-two-projects-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__online-shop {
+      margin-top: 5rem;
+    }
+
+    &__crm-program {
+      margin-top: 5rem;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.7rem;
+      color: white;
+    }
+
+    .shop-headline {
+    }
+
+    &__application-img-description-div-reverse {
+      width: 75%;
+    }
+
+    &__application-img-description-div {
+      width: 75%;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      font-size: 1.1rem;
+      color: $primary-text-color;
+      line-height: 1.7rem;
+    }
+
+    .platform-description-div,
+    .shop-description-div,
+    .italiener-description-div {
+      margin: 0;
+    }
+
+    .crm-description-div {
+      margin: 0 10%;
+    }
+
+    .crm-description-detail {
+      width: 100%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 3rem auto 0 auto;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 1rem;
+    }
+
+    .platform-technology-div {
+      margin: 0.3rem 0 0 12.3%;
+    }
+
+    .shop-technology-div {
+      margin: 2rem 0 0 12.3%;
+    }
+
+    .italiener-technology-div {
+      margin-left: 12.3%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 0.5rem;
+    }
+
+    .crm-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 0.5rem;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      width: 100%;
+    }
+
+    &__crm-carousel {
+      width: 18rem;
+      margin: 0 3rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 267px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 277px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: 8.8rem;
+    }
+
+    .carousel-button {
+      font-size: 22px;
+      width: 2rem;
+      height: 3rem;
+    }
+
+    &__crm-carousel-prev-button,
+    &__crm-carousel-next-button {
+      margin-left: 0;
+      margin-top: 3rem;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 3rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 3rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    .mobile-img {
+      height: 30rem;
+      border-radius: 0.1rem;
+    }
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      column-gap: 5rem;
+    }
+
+    .platform-button-div,
+    .shop-button-div,
+    .italiener-button-div {
+      margin-top: 3rem;
+    }
+
+    .crm-button-div {
+      display: flex;
+      column-gap: 5rem;
+    }
+
+    /*&__link {
+      margin: 1rem 0;
+      width: 10rem;
+      height: 2rem;
+    }*/
+
+    &__button {
+      width: 11rem;
+      font-size: 1rem;
+    }
+
+    /*&__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }*/
+  }
+
+  .technology-section {
+    &__h2-headline {
+      margin-bottom: 0;
+      font-size: 2.3rem;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 3rem 0;
+      @include column-flex-direction();
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+    }
+
+    &__subdivision-div {
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  .contact-section {
+    flex-direction: column-reverse;
+    row-gap: 10rem;
+    margin: 0 0 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+      width: 100%;
+      max-width: 40rem;
+      padding-left: 1%;
+    }
+
+    &__headline {
+      font-size: 1.7rem;
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 18.4px;
+      margin-right: 0.5rem;
+      color: $primary-text-color;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+        font-size: 1.2rem;
+        color: $secondary-text-color;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+      width: 2.3rem;
+    }
+
+    &__linkedin-img {
+      width: 2.3rem;
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      width: 100%;
+      max-width: 40rem;
+      margin-right: 0;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__headline {
+      &--github-headline {
+        font-size: 1.9rem;
+      }
+    }
+
+    &__text {
+      font-size: 1rem;
+
+      &--github-text {
+        font-size: 1rem;
+      }
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 0.9rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+
+  //  Impressum
+
+  .to-website {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 7rem;
+  }
+
+  .to-main-side-icon {
+    margin: 3rem 0 0 5%;
+    width: 2rem;
+    color: white;
+  }
+
+  .impressum-headline {
+  }
+
+  .impressum-info-div {
+    &__impressum-legal-information {
+      font-size: 1.4rem;
+    }
+
+    &__impressum-contact {
+      font-size: 1.5rem;
+    }
+
+    &__impressum-name,
+    &__impressum-adress,
+    &__impressum-number,
+    &__impressum-mail {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head-section {
+    flex-direction: column;
+    row-gap: 5rem;
+
+    &__developer-div {
+      width: 90%;
+      margin-left: 0;
+    }
+
+    &__developer-text {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+
+    &__decorection-div {
+      width: 90%;
+      margin-right: 0;
+    }
+
+    &__technology-img {
+      width: 95%;
+    }
+  }
+
+  .project-section {
+    &__text {
+      margin: 3rem 7%;
+      font-size: 1rem;
+    }
+
+    &__project-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__the-first-two-projects-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__online-shop {
+      margin-top: 5rem;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.8rem;
+      color: white;
+    }
+
+    .shop-headline {
+    }
+
+    &__application-img-description-div-reverse {
+      width: 100%;
+    }
+
+    &__application-img-description-div {
+      width: 100%;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      font-size: 1rem;
+      color: $primary-text-color;
+      line-height: 1.7rem;
+    }
+
+    .platform-description-div,
+    .shop-description-div,
+    .italiener-description-div {
+      margin: 0;
+    }
+
+    .crm-description-div {
+      margin: 0 10%;
+    }
+
+    .crm-description-detail {
+      width: 100%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 3rem auto 0 auto;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div,
+    .italiener-technology-div,
+    .crm-technology-div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 1rem;
+      margin: 0 auto;
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      width: 25rem;
+    }
+
+    &__crm-carousel {
+      width: 10.1rem;
+      margin: 0 1rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 200px;
+      margin: 0 1.5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 200px;
+      margin: 0 1.5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      height: 10rem;
+    }
+
+    &__crm-carousel-images img {
+      width: 100%;
+      height: 6.7rem;
+    }
+
+    .carousel-button {
+      font-size: 20px;
+      width: 1.8rem;
+      height: 2.8rem;
+    }
+
+    &__crm-carousel-prev-button,
+    &__crm-carousel-next-button {
+      margin-top: 3rem;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 1rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 1rem;
+    }
+
+    .mobile-img {
+      width: 200px;
+      height: auto;
+    }
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1rem auto 0 auto;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    .crm-button-div {
+      margin-top: 3rem;
+    }
+
+    &__link {
+      margin: 0;
+    }
+
+    &__button {
+      font-size: 0.9rem;
+    }
+
+    /*&__link:hover {
+      text-decoration: none;
+    }*/
+  }
+
+  .technology-section {
+    &__h2-headline {
+      font-size: 2rem;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 1rem 0;
+      @include column-flex-direction();
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+    }
+
+    &__headline {
+      font-size: 1.5rem;
+    }
+
+    &__subdivision-div {
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.3rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      @include center-content();
+      column-gap: 1rem;
+    }
+
+    &__img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .contact-section {
+    margin: -5rem 0 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+    }
+
+    &__headline {
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-size: 1rem;
+      margin-right: 0.5rem;
+      color: $primary-text-color;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+    }
+
+    &__linkedin-img {
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      margin-right: 0;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+
+  //  Impressum
+
+  .to-website {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 5rem;
+  }
+
+  .to-main-side-icon {
+  }
+
+  .impressum-headline {
+    font-size: 1.7rem;
+  }
+
+  .impressum-info-div {
+    width: 100%;
+
+    &__impressum-legal-information {
+      font-size: 1.2rem;
+    }
+
+    &__impressum-contact {
+      font-size: 1.3rem;
+    }
+
+    &__impressum-name,
+    &__impressum-adress,
+    &__impressum-number,
+    &__impressum-mail {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .head-section {
+    flex-direction: column;
+    row-gap: 5rem;
+
+    &__developer-div {
+    }
+
+    &__description-headline {
+      font-size: 1.1rem;
+    }
+
+    &__decorection-div {
+    }
+
+    &__technology-img {
+      width: 90%;
+    }
+  }
+
+  .project-section {
+    &__text {
+      margin: 3rem 7%;
+    }
+
+    &__project-div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__mobil-first-projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__the-first-two-projects-div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*&__project-div {
+    margin: 3rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }*/
+
+    &__online-shop {
+      margin-top: 5rem;
+    }
+
+    /*&__headline-left {
+    font-size: 1.8rem;
+    margin: 0 0 -3rem 15rem;
+    color: white;
+  }
+
+  &__headline-right {
+    font-size: 1.8rem;
+    margin: 0 0 -2.5rem 50rem;
+    color: white;
+  }*/
+
+    &__headline-left,
+    &__headline-right {
+      margin: 3rem 0;
+      font-size: 1.6rem;
+      color: white;
+    }
+
+    .shop-headline,
+    .italiener-headline {
+      margin-left: 5%;
+      margin-right: 5%;
+      text-align: center;
+    }
+
+    &__application-img-description-div-reverse {
+      width: 100%;
+    }
+
+    &__application-img-description-div {
+      width: 100%;
+    }
+
+    &__application-description-div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      width: 75%;
+      color: $primary-text-color;
+    }
+
+    .platform-description-div,
+    .shop-description-div,
+    .italiener-description-div {
+      margin: 0;
+    }
+
+    .crm-description-div {
+      margin: 0 10%;
+    }
+
+    .crm-description-detail {
+      width: 100%;
+    }
+
+    &__application-description-left,
+    &__application-description-right {
+      margin: 1rem auto 0 auto;
+    }
+
+    &__application-technology-div-left,
+    &__application-technology-div-right {
+      margin-left: 4.7rem;
+      display: flex;
+      column-gap: 1rem;
+    }
+
+    .platform-technology-div,
+    .shop-technology-div {
+    }
+
+    .platform-technology-div {
+    }
+
+    .shop-technology-div {
+    }
+
+    .italiener-technology-div {
+    }
+
+    .crm-technology-div {
+    }
+
+    &__application-technology {
+      @include center-content();
+      background-color: #334155;
+      border-radius: 0.5rem;
+      padding: 2.5px 5.5px;
+      font-size: 0.8rem;
+      color: white;
+    }
+
+    &__img-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0.3rem 0;
+      box-sizing: border-box;
+    }
+
+    .crm-carousel-div {
+      width: 15rem;
+    }
+
+    &__crm-carousel {
+      width: 10.1rem;
+      margin: 0 1rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__shop-carousel,
+    &__website-carousel {
+      width: 200px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__platform-carousel {
+      width: 200px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
+    &__crm-carousel-images,
+    &__shop-carousel-images,
+    &__website-carousel-images,
+    &__platform-carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      height: 10rem;
+    }
+
+    &__crm-carousel-images img {
+      width: 10rem;
+      height: 4.6rem;
+    }
+
+    .carousel-button {
+      font-size: 20px;
+      width: 1.8rem;
+      height: 2.8rem;
+    }
+
+    &__crm-carousel-prev-button,
+    &__crm-carousel-next-button {
+      margin-top: 3rem;
+    }
+
+    &__shop-carousel-prev-button,
+    &__website-carousel-prev-button,
+    &__platform-carousel-prev-button {
+      margin-right: 0.5rem;
+    }
+
+    &__shop-carousel-next-button,
+    &__website-carousel-next-button,
+    &__platform-carousel-next-button {
+      margin-left: 0.5rem;
+    }
+
+    .carousel-button:hover {
+      background-color: white;
+      color: #039be5;
+    }
+
+    .mobile-img {
+      width: 200px;
+      height: auto;
+    }
+
+    /*.crm-img {
+    width: 55rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }*/
+
+    /*&__button-div-left {
+    display: flex;
+    margin: -4rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    &__button-div-left,
+    &__button-div-right {
+      margin: 1.5rem auto 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*.crm-button-div {
+    display: flex;
+    margin: -2rem 0 0 10rem;
+    column-gap: 7rem;
+    width: 30rem;
+  }*/
+
+    .platform-button-div,
+    .shop-button-div,
+    .italiener-button-div {
+      margin-top: 1rem;
+    }
+
+    .crm-button-div {
+      display: flex;
+      column-gap: 7rem;
+    }
+
+    /*&__link {
+      margin: 1rem 0;
+      width: 10rem;
+      height: 2rem;
+    }
+
+    &__button {
+      @include blue-button-style();
+      font-size: 1.2rem;
+      width: 14rem;
+      height: 2.5rem;
+      @include center-content();
+      border-radius: 0.2rem;
+    }
+
+    &__button:hover {
+      @include blue-button-hover-style();
+    }
+
+    &__link:hover {
+      text-decoration: none;
+    }*/
+  }
+
+  .technology-section {
+    &__h2-headline {
+      font-size: 1.7rem;
+    }
+
+    &__technology-div {
+      width: 100%;
+      padding: 1rem 0;
+      @include column-flex-direction();
+
+      column-gap: 3.5rem;
+    }
+
+    &__markup-language-div,
+    &__programming-language-div,
+    &__framework-div,
+    &__version-control-div,
+    &__database-technology-div {
+    }
+
+    &__headline {
+      font-size: 1.3rem;
+    }
+
+    &__subdivision-div {
+      flex-direction: column;
+    }
+
+    &__html-div,
+    &__css-div,
+    &__scss-div,
+    &__javascript-div,
+    &__typescript-div,
+    &__react-div,
+    &__github-div,
+    &__supabase-div {
+    }
+
+    &__text {
+      color: white;
+      font-size: 1.1rem;
+      margin: 2rem 0;
+    }
+
+    &__img-div {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    &__img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+  .contact-section {
+    margin: 0 0 5rem 0;
+    padding: 0 5%;
+
+    &__generally-contact-div {
+    }
+
+    &__headline {
+      margin-top: 0.7rem;
+      color: white;
+
+      &--github-headline {
+        font-size: 2rem;
+        margin-top: 4rem;
+        color: white;
+        text-align: center;
+      }
+    }
+
+    &__text {
+      margin-right: 0.5rem;
+
+      &--github-text {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+      }
+    }
+
+    &__mail-link-div {
+      margin: 2.5rem 0;
+      display: flex;
+      column-gap: 0.5rem;
+    }
+
+    &__mail-link-icon {
+      width: 1.5rem;
+      font-weight: bold;
+      color: #3b82f6;
+    }
+
+    &__mail-link {
+      color: #3b82f6;
+      font-weight: 600;
+    }
+
+    &__social-media-link-div {
+      display: flex;
+      column-gap: 2rem;
+    }
+
+    &__github-img {
+      width: 2.5rem;
+    }
+
+    &__linkedin-img {
+      width: 2.5rem;
+      margin-top: 0.1rem;
+    }
+
+    &__github-div {
+      margin-right: 0;
+      background-color: $secondary-color;
+      border-radius: 0.5rem;
+    }
+
+    &__github-profil-button {
+      width: 90%;
+      margin: 0 auto 3.5rem auto;
+      padding: 0.7rem 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 0.5rem;
+      font-size: 1rem;
+      background-color: $primary-color;
+      color: white;
+      border: none;
+      border-radius: 0.7rem;
+    }
+
+    &__connect-to-website-icon {
+      width: 1.3rem;
+    }
+  }
+
+  //  Impressum
+
+  .to-website {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 3rem 0 0 5rem;
+  }
+
+  .to-main-side-icon {
+  }
+
+  .impressum-headline {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+  }
+
+  .impressum-info-div {
+    &__impressum-legal-information {
+      font-size: 1.2rem;
+    }
+
+    &__impressum-contact {
+      font-size: 1.3rem;
+    }
+
+    &__impressum-name,
+    &__impressum-adress,
+    &__impressum-number,
+    &__impressum-mail {
+      font-size: 1rem;
+    }
+  }
+}

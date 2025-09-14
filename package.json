@@ -1,0 +1,16 @@
+{
+  "name": "portfoliowebsite",
+  "version": "1.0.0",
+  "description": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "Portfoliowebsite": " sass --watch --update assets/scss:assets/css "
+  },
+  "keywords": [],
+  "author": "Richter",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}

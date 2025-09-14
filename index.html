@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Webseite</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section class="head-section">
+      <div class="head-section__developer-div">
+        <img
+          src="./assets/img/Richter Sven.jpg"
+          class="head-section__developer-img"
+          alt=""
+        />
+
+        <div class="head-section__headline-div">
+          <p class="head-section__description-headline">
+            Hi, ich bin
+            <span class="head-section__developer-name">Sven</span>.
+          </p>
+
+          <div class="head-section__main-headline">
+            Ihr neuer
+            <br />
+            <span class="head-section__focus-headline">Frontend Developer</span
+            >.
+          </div>
+        </div>
+
+        <p class="head-section__developer-text">
+          Mein Name ist Sven Richter, bin Softwareentwickler mit Schwerpunkt im
+          Bereich Frontend Web Development und komme aus Stralsund. Ich
+          realisiere Ihre Projekte und bringe sie in die digitale Welt.
+        </p>
+        <div class="head-section__social-media-link-div">
+          <a
+            href="https://github.com/r-s-94?tab=repositories"
+            target="_blank"
+            class="head-section__social-media-link link"
+          >
+            <img
+              src="./assets/img/icons8-github-188.png"
+              class="head-section__social-media-img github-img"
+              alt=""
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sven-richter-77914b284/"
+            target="_blank"
+            class="head-section__social-media-link link"
+          >
+            <img
+              src="./assets/img/icons8-linkedin-188.png"
+              class="head-section__social-media-img linkedin-img"
+              alt=""
+            />
+          </a>
+        </div>
+        <a
+          href="#project-section"
+          class="head-section__show-projects-link link no-underline"
+          ><button class="head-section__show-projects-button button">
+            Projekte ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="head-section__show-projects-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3"
+              />
+            </svg></button
+        ></a>
+      </div>
+      <div class="head-section__decorection-div">
+        <img
+          src="./assets/img/techs.png"
+          class="head-section__technology-img"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="project-section" class="project-section">
+      <h2 class="project-section__h2-headline">Meine Projekte</h2>
+
+      <p class="project-section__text">
+        Hier eine Übersicht von ein paar Projekten, mit denen Sie sich ein Bild
+        von meinen Fähigkeiten und Erfahrungen machen können.
+      </p>
+
+      <div class="project-section__project-div">
+        <div class="project-section__mobil-first-projects">
+          <div class="project-section__the-first-two-projects-div">
+            <div class="project-section__open-pure-net">
+              <span class="project-section__headline-right platform-headline"
+                >OpenPureNet</span
+              >
+
+              <div class="project-section__application-img-description-div">
+                <div class="project-section__img-div">
+                  <button
+                    onclick="platformMoveSlide(-1)"
+                    class="project-section__platform-carousel-prev-button carousel-button button"
+                  >
+                    &#10094;
+                  </button>
+                  <div class="project-section__platform-carousel">
+                    <div class="project-section__platform-carousel-images">
+                      <img
+                        src="./assets/img/OpenPureNet-SignIn.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet-Overview.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet-createvContent.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet-edit Content.jpg "
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet- search User.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet- search User view.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/OpenPureNet- Settings.jpg"
+                        class="project-section__img--platform-img platform-img mobile-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    onclick="platformMoveSlide(1)"
+                    class="project-section__platform-carousel-next-button carousel-button button"
+                  >
+                    &#10095;
+                  </button>
+                </div>
+
+                <div
+                  class="project-section__application-description-div platform-description-div"
+                >
+                  <p class="project-section__application-description-right">
+                    OpenPureNet ist eine selbst entwickelte Plattform, die den
+                    Funktionsumfang moderner Netzwerke nachbildet.
+                    Registrierung, Login und Verwaltung von Profilen. Anfragen
+                    senden, annehmen, Status verfolgen. Bilder und Videos mit
+                    Validierung (Dateiname, Dateigröße, Sonderzeichen)
+                    hochladen. Nutzer werden über neue Anfragen und
+                    Upload-Status informiert.
+                  </p>
+
+                  <div
+                    class="project-section__application-technology-div-right platform-technology-div"
+                  >
+                    <span class="project-section__application-technology"
+                      >React-Vite</span
+                    >
+                    <span class="project-section__application-technology"
+                      >TypeScript</span
+                    >
+                    <span class="project-section__application-technology"
+                      >React-Router-Dom</span
+                    >
+                    <span class="project-section__application-technology"
+                      >SupaBase</span
+                    >
+                    <span class="project-section__application-technology"
+                      >Tailwind-CSS</span
+                    >
+                    <span class="project-section__application-technology"
+                      >Shadcn</span
+                    >
+                    <span class="project-section__application-technology"
+                      >Responsive Design</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="project-section__button-div-right platform-button-div"
+              >
+                <a
+                  href="https://r-s-94.github.io/OpenPureNet"
+                  class="project-section__link link no-underline"
+                  target="_blank"
+                  ><button class="project-section__button button">
+                    zu OpenPureNet
+                  </button></a
+                >
+                <a
+                  href="https://github.com/r-s-94/OpenPureNet"
+                  class="project-section__link link no-underline"
+                  target="_blank"
+                >
+                  <button class="project-section__button button">
+                    Code ansehen
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-section__online-shop">
+              <span class="project-section__headline-right shop-headline"
+                >Online-Shop Amagon</span
+              >
+
+              <div class="project-section__application-img-description-div">
+                <div class="project-section__img-div online-shop-img">
+                  <button
+                    onclick="shopMoveSlide(-1)"
+                    class="project-section__shop-carousel-prev-button carousel-button button"
+                  >
+                    &#10094;
+                  </button>
+                  <div class="project-section__shop-carousel">
+                    <div class="project-section__shop-carousel-images">
+                      <img
+                        src="./assets/img/Amagon Online-Shop .jpg"
+                        class="project-section__img shop-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/Amagon Online-Shop about us.jpg"
+                        class="project-section__img shop-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/Amagon Online-Shop Warenkorb.jpg"
+                        class="project-section__img shop-img mobile-img"
+                        alt=""
+                      />
+                      <img
+                        src="./assets/img/Amagon Online-Shop check out.jpg"
+                        class="project-section__img shop-img mobile-img"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <button
+                    onclick="shopMoveSlide(1)"
+                    class="project-section__shop-carousel-next-button carousel-button button"
+                  >
+                    &#10095;
+                  </button>
+                </div>
+
+                <div
+                  class="project-section__application-description-div shop-description-div"
+                >
+                  <p class="project-section__application-description-right">
+                    Amagon, ein fiktiver Online-Shop, steht für modernes
+                    Online-Shopping mit grenzenloser Vielfalt. Mit modernen
+                    Technologien wie ReactVite, SCSS, ReactRouterDOM und
+                    LocalStorage wurde dieser übersichtliche, ansprechnd
+                    gestaltete Shop entwickelt. Einkäufe und Einstellungen
+                    lassen sich einfach und bequem im LocalStorage speichern.
+                    Das Design ist responsive und für mobile Endgeräte
+                    optimiert.
+                  </p>
+
+                  <div
+                    class="project-section__application-technology-div-right shop-technology-div"
+                  >
+                    <span class="project-section__application-technology"
+                      >HTML</span
+                    >
+                    <span class="project-section__application-technology"
+                      >SCSS</span
+                    >
+                    <span class="project-section__application-technology"
+                      >React Vite</span
+                    >
+                    <span class="project-section__application-technology"
+                      >React-Router-Dom</span
+                    >
+                    <span class="project-section__application-technology"
+                      >Local-Storage</span
+                    >
+                    <span class="project-section__application-technology"
+                      >Responsive Design</span
+                    >
+                    <span class="project-section__application-technology"
+                      >BEM</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-section__button-div-right shop-button-div">
+                <a
+                  href="https://r-s-94.github.io/Online-Shop"
+                  class="project-section__link link no-underline"
+                  target="_blank"
+                  ><button class="project-section__button button">
+                    zu Amagon
+                  </button></a
+                >
+                <a
+                  href="https://github.com/r-s-94/Online-Shop"
+                  class="project-section__link link no-underline"
+                  target="_blank"
+                >
+                  <button class="project-section__button button">
+                    Code ansehen
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section__italiner">
+            <span class="project-section__headline-left italiener-headline"
+              >Benvenutto Salvatore</span
+            >
+
+            <div
+              class="project-section__application-img-description-div-reverse"
+            >
+              <div class="project-section__img-div">
+                <button
+                  onclick="websiteMoveSlide(-1)"
+                  class="project-section__website-carousel-prev-button carousel-button button"
+                >
+                  &#10094;
+                </button>
+                <div class="project-section__website-carousel">
+                  <div class="project-section__website-carousel-images">
+                    <img
+                      src="./assets/img/Screenshot Italiener.jpg"
+                      class="project-section__img italiener-img mobile-img"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/Screenshot Italiener 2.jpg"
+                      class="project-section__img italiener-img mobile-img"
+                      alt=""
+                    />
+                    <img
+                      src="./assets/img/Screenshot Italiener 3.jpg"
+                      class="project-section__img italiener-img mobile-img"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <button
+                  onclick="websiteMoveSlide(1)"
+                  class="project-section__website-carousel-next-button carousel-button button"
+                >
+                  &#10095;
+                </button>
+              </div>
+
+              <div
+                class="project-section__application-description-div italiener-description-div"
+              >
+                <p class="project-section__application-description-left">
+                  Die Webseite von dem fiktiven Italiener Benvenutto Salvatore
+                  ist eine moderne ansprechende Webpage im dunklen Design. Das
+                  Layout ist darauf ausgelegt, den Besucher der Seite zu einem
+                  Besuch im Restaurant anzuregen. Das Design wurde responsive
+                  mit angepasst und ist auch für Mobile optimiert, um den
+                  Besucher ein optimales Erlebnis zu bereiten.
+                </p>
+
+                <div
+                  class="project-section__application-technology-div-left italiener-technology-div"
+                >
+                  <span class="project-section__application-technology"
+                    >HTML</span
+                  >
+                  <span class="project-section__application-technology"
+                    >SCSS</span
+                  >
+                  <span class="project-section__application-technology"
+                    >JavaScript</span
+                  >
+                  <span class="project-section__application-technology"
+                    >Responsive Design</span
+                  >
+                  <span class="project-section__application-technology"
+                    >BEM</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project-section__button-div-left italiener-button-div">
+              <a
+                href="https://r-s-94.github.io/Italiener"
+                class="project-section__link link no-underline"
+                target="_blank"
+              >
+                <button class="project-section__button button">
+                  zu Salvatore
+                </button>
+              </a>
+              <a
+                href="https://github.com/r-s-94/Italiener"
+                class="project-section__link link no-underline"
+                target="_blank"
+              >
+                <button class="project-section__button button">
+                  Code ansehen
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-section__crm-program">
+          <span class="project-section__headline-left crm-headline"
+            >Client Nexus CRM</span
+          >
+
+          <div
+            class="project-section__application-img-description-div-reverse crm-img-div"
+          >
+            <div class="project-section__img-div crm-carousel-div">
+              <button
+                onclick="crmMoveSlide(-1)"
+                class="project-section__crm-carousel-prev-button carousel-button button"
+              >
+                &#10094;
+              </button>
+              <div class="project-section__crm-carousel">
+                <div class="project-section__crm-carousel-images">
+                  <img
+                    src="./assets/img/Screenshot (18).png"
+                    class="project-section__img crm-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/img/Screenshot (19).png"
+                    class="project-section__img crm-img"
+                    alt=""
+                  />
+
+                  <img
+                    src="./assets/img/Screenshot (20).png"
+                    class="project-section__img crm-img"
+                    alt=""
+                  />
+                  <img
+                    src="./assets/img/Screenshot (21).png"
+                    class="project-section__img crm-img"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <button
+                onclick="crmMoveSlide(1)"
+                class="project-section__crm-carousel-next-button carousel-button button"
+              >
+                &#10095;
+              </button>
+            </div>
+
+            <div
+              class="project-section__application-description-div crm-description-div"
+            >
+              <p
+                class="project-section__application-description-left crm-description-detail"
+              >
+                Das Client Nexus CRM Programm bietet es an, seine Mitarbeiter,
+                Kunden und Aufträge digital zu erfassen und zu verarbeiten. Ein
+                Graph zur Anzeige des Jahresumsatzes macht die Finanzen
+                übersichtlich.
+              </p>
+
+              <div
+                class="project-section__application-technology-div-left crm-technology-div"
+              >
+                <span class="project-section__application-technology"
+                  >HTML</span
+                >
+                <span class="project-section__application-technology">CSS</span>
+                <span class="project-section__application-technology"
+                  >React Vite</span
+                >
+                <span class="project-section__application-technology"
+                  >React-<wbr />Router-<wbr />Dom</span
+                >
+                <span class="project-section__application-technology"
+                  >SupaBase</span
+                >
+                <span class="project-section__application-technology"
+                  >Responsive Design</span
+                >
+                <span class="project-section__application-technology">BEM</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-section__button-div-left crm-button-div">
+            <a
+              href="https://r-s-94.github.io/CRM-Verwaltungsprogramm"
+              class="project-section__link link no-underline"
+              target="_blank"
+              ><button class="project-section__button button">
+                zu Client Nexus
+              </button></a
+            >
+            <a
+              href="https://github.com/r-s-94/CRM-Verwaltungsprogramm"
+              class="project-section__link link no-underline"
+              target="_blank"
+            >
+              <button class="project-section__button button">
+                Code ansehen
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="technologies" class="technology-section">
+      <h2 class="technology-section__h2-headline">Technologien</h2>
+
+      <div class="technology-section__technology-div">
+        <div class="technology-section__markup-language-div">
+          <h3 class="technology-section__headline">Markup-<wbr />Sprachen</h3>
+          <div class="technology-section__subdivision-div">
+            <div class="technology-section__html-div">
+              <span class="technology-section__text">HTML</span>
+              <img
+                src="./assets/img/html-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+
+            <div class="technology-section__css-div">
+              <span class="technology-section__text">CSS</span>
+              <img
+                src="./assets/img/css-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+
+            <div class="technology-section__scss-div">
+              <span class="technology-section__text">SCSS</span>
+              <img
+                src="./assets/img/scss-Logo sass-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__programming-language-div">
+          <h3 class="technology-section__headline">
+            Programmier<wbr />sprache
+          </h3>
+          <div class="technology-section__subdivision-div">
+            <div class="technology-section__javascript-div">
+              <span class="technology-section__text">Javascript</span>
+              <img
+                src="./assets/img/javascript-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+            <div class="technology-section__typescript-div">
+              <span class="technology-section__text">Typescript</span>
+              <img
+                src="./assets/img/typescript-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__framework-div">
+          <h3 class="technology-section__headline">Framework</h3>
+          <div class="technology-section__react-div">
+            <span class="technology-section__text">React + Vite</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/react-Logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+
+              <img
+                src="./assets/img/vite-Logo.svg"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__version-control-div">
+          <h3 class="technology-section__headline">Versions<wbr />kontrolle</h3>
+          <div class="technology-section__github-div">
+            <span class="technology-section__text">Git & Github</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/git-Logo.svg"
+                class="technology-section__img"
+                alt=""
+              />
+
+              <img
+                src="./assets/img/icons8-github-188.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-section__database-technology-div">
+          <h3 class="technology-section__headline">
+            Backend-<wbr />Technologie
+          </h3>
+          <div class="technology-section__supabase-div">
+            <span class="technology-section__text">SupaBase</span>
+            <div class="technology-section__img-div">
+              <img
+                src="./assets/img/supabase-logo.png"
+                class="technology-section__img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-section__generally-contact-div">
+        <h2 class="contact-section__headline">Noch Fragen?</h2>
+        <p class="contact-section__text">
+          Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die
+          unten aufgeführte E-Mail Adresse oder schauen auf meinen
+          Social-Media-Profilen vorbei!
+        </p>
+        <div class="contact-section__mail-link-div">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="contact-section__mail-link-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+            />
+          </svg>
+          <a
+            href="mailto:richter.s.94@web.de"
+            class="contact-section__mail-link"
+            >richter.s.94@web.de</a
+          >
+        </div>
+        <div class="contact-section__social-media-link-div">
+          <a
+            href="https://github.com/r-s-94?tab=repositories"
+            target="_blank"
+            class="contact-section__social-media-link link"
+          >
+            <img
+              src="./assets/img/icons8-github-188.png"
+              class="contact-section__github-img"
+              alt=""
+            />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sven-richter-77914b284/"
+            target="_blank"
+            class="contact-section__social-media-link link"
+          >
+            <img
+              src="./assets/img/icons8-linkedin-188.png"
+              class="contact-section__linkedin-img"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-section__github-div">
+        <h2 class="contact-section__headline--github-headline">
+          Weitere Erfahrungen
+        </h2>
+        <p class="contact-section__text--github-text">
+          Auf meinem GitHub-Profil finden Sie weitere Porjekte, die ich im Laufe
+          der Zeit erstellt habe. Dort können Sie sich selbst von meinem Code
+          überzeugen.
+        </p>
+        <a
+          href="https://github.com/r-s-94"
+          target="_blank"
+          class="contact-section__github-profil-link link no-underline"
+          ><button class="contact-section__github-profil-button button">
+            GitHub ansehen
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="contact-section__connect-to-website-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              />
+            </svg></button
+        ></a>
+      </div>
+    </section>
+
+    <div class="footer-div">
+      <a href="impressum.html" class="footer-div__impressum-link link"
+        >Impressum</a
+      >
+      <p class="footer-div__copy-right">&#169; Richter-Softwaresysteme.de</p>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+      /*
+
+
+       <link rel="stylesheet" href="assets/css/responsiveStyle.css" />
+      
+
+   
+ 
+      */
+    </script>
+  </body>
+</html>
