@@ -314,6 +314,7 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
+    width: 77rem;
     margin: 0 auto;
   }
   .project-section__crm-carousel {
@@ -343,7 +344,7 @@ a:hover {
     height: 100%;
   }
   .project-section__crm-carousel-images img {
-    width: 100%;
+    width: auto;
     height: 30rem;
   }
   .project-section .carousel-button {
@@ -864,7 +865,8 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
-    width: 100%;
+    width: 60rem;
+    margin: 0 auto;
   }
   .project-section__crm-carousel {
     width: 43rem;
@@ -893,8 +895,8 @@ a:hover {
     height: 100%;
   }
   .project-section__crm-carousel-images img {
-    width: 100%;
-    height: 20.9rem;
+    width: auto;
+    height: 20.7rem;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -1326,7 +1328,7 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
-    width: 100%;
+    width: 47rem;
   }
   .project-section__crm-carousel {
     width: 34.5rem;
@@ -1355,8 +1357,7 @@ a:hover {
     height: 100%;
   }
   .project-section__crm-carousel-images img {
-    width: 100%;
-    height: 16.8rem;
+    height: 15.8rem;
   }
   .project-section .carousel-button {
     transform: translateY(-50%);
@@ -1709,7 +1710,7 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
-    width: 100%;
+    width: 28rem;
   }
   .project-section__crm-carousel {
     width: 18rem;
@@ -1738,8 +1739,7 @@ a:hover {
     height: 100%;
   }
   .project-section__crm-carousel-images img {
-    width: 100%;
-    height: 8.8rem;
+    height: 8.63rem;
   }
   .project-section .carousel-button {
     font-size: 22px;
@@ -2072,7 +2072,7 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
-    width: 25rem;
+    width: 20rem;
   }
   .project-section__crm-carousel {
     width: 10.1rem;
@@ -2101,8 +2101,8 @@ a:hover {
     height: 10rem;
   }
   .project-section__crm-carousel-images img {
-    width: 100%;
-    height: 6.7rem;
+    width: auto;
+    height: 4.9rem;
   }
   .project-section .carousel-button {
     font-size: 20px;
@@ -2410,7 +2410,7 @@ a:hover {
     box-sizing: border-box;
   }
   .project-section .crm-carousel-div {
-    width: 15rem;
+    width: 15.7rem;
   }
   .project-section__crm-carousel {
     width: 10.1rem;
@@ -2439,8 +2439,8 @@ a:hover {
     height: 10rem;
   }
   .project-section__crm-carousel-images img {
-    width: 10rem;
-    height: 4.6rem;
+    width: auto;
+    height: 4.83rem;
   }
   .project-section .carousel-button {
     font-size: 20px;
@@ -2472,7 +2472,7 @@ a:hover {
   .project-section .platform-button-div,
   .project-section .shop-button-div,
   .project-section .italiener-button-div {
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   .project-section .crm-button-div {
     display: flex;
