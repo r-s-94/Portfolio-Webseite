@@ -913,6 +913,16 @@ body {
     width: auto;
     height: 20.7rem;
   }
+  .project-section .crm-img {
+    width: 42.7rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }
+  .project-section .mobile-img {
+    height: 27rem;
+    border-radius: 0.1rem;
+  }
   .project-section .carousel-button {
     transform: translateY(-50%);
     background-color: #2563eb;
@@ -1319,6 +1329,16 @@ body {
   .project-section__crm-carousel-images img {
     height: 15.8rem;
   }
+  .project-section .crm-img {
+    width: 32.5rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }
+  .project-section .mobile-img {
+    height: 25rem;
+    border-radius: 0.1rem;
+  }
   .project-section .carousel-button {
     transform: translateY(-50%);
     background-color: #2563eb;
@@ -1662,6 +1682,16 @@ body {
   .project-section__crm-carousel-images img {
     height: 8.63rem;
   }
+  .project-section .crm-img {
+    width: 17.3rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }
+  .project-section .mobile-img {
+    height: 23rem;
+    border-radius: 0.1rem;
+  }
   .project-section .carousel-button {
     font-size: 22px;
     width: 2rem;
@@ -1996,6 +2026,16 @@ body {
   .project-section__crm-carousel-images img {
     width: auto;
     height: 4.9rem;
+  }
+  .project-section .crm-img {
+    width: 10.1rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.1rem;
+  }
+  .project-section .mobile-img {
+    height: 20rem;
+    border-radius: 0.1rem;
   }
   .project-section .carousel-button {
     font-size: 20px;

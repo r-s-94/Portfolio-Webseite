@@ -1044,6 +1044,18 @@ body {
       height: 20.7rem;
     }
 
+    .crm-img {
+      width: 42.7rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }
+
+    .mobile-img {
+      height: 27rem;
+      border-radius: 0.1rem;
+    }
+
     .carousel-button {
       transform: translateY(-50%);
       background-color: $primary-color;
@@ -1543,6 +1555,18 @@ body {
       height: 15.8rem;
     }
 
+    .crm-img {
+      width: 32.5rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }
+
+    .mobile-img {
+      height: 25rem;
+      border-radius: 0.1rem;
+    }
+
     .carousel-button {
       transform: translateY(-50%);
       background-color: $primary-color;
@@ -1968,6 +1992,18 @@ body {
       height: 8.63rem;
     }
 
+    .crm-img {
+      width: 17.3rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }
+
+    .mobile-img {
+      height: 23rem;
+      border-radius: 0.1rem;
+    }
+
     .carousel-button {
       font-size: 22px;
       width: 2rem;
@@ -2390,6 +2426,18 @@ body {
     &__crm-carousel-images img {
       width: auto;
       height: 4.9rem;
+    }
+
+    .crm-img {
+      width: 10.1rem;
+      height: auto;
+      object-fit: cover;
+      border-radius: 0.1rem;
+    }
+
+    .mobile-img {
+      height: 20rem;
+      border-radius: 0.1rem;
     }
 
     .carousel-button {

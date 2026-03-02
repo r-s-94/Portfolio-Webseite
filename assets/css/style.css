@@ -1,16 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
-/*@mixin headline-button-properties {
-  border: 0.1rem solid white;
-  background-color: #222222;
-  color: #80d8ff;
-  border-radius: 0.1rem;
-}*/
-/*@mixin headline-button-hover-properties {
-  background-color: white;
-  border-color: black;
-}*/
 html {
   scroll-behavior: smooth;
 }
@@ -19,10 +9,6 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  /*font-family: "Funnel Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;*/
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -30,50 +16,6 @@ body {
   background-color: #020620;
 }
 
-/*.nav-section {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-
-  &__nav-bar {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  &__link {
-    color: white;
-    font-size: 1.5rem;
-  }
-
-  &__hamburger-menu {
-    position: absolute;
-    top: 5rem;
-    right: 5%;
-    width: 2.3rem;
-    height: 1.8rem;
-    padding: 0.3rem 0;
-    @include column-flex-direction();
-    background-color: #00021f;
-    row-gap: 0.3rem;
-  }
-
-  &__bar1,
-  &__bar2,
-  &__bar3 {
-    width: 1.3rem;
-    height: 0.2rem;
-    background-color: white;
-    border-radius: 0.2rem;
-  }
-
-  &__hamburger-menu:hover {
-    cursor: pointer;
-  }
-}*/
 .head-section {
   margin-top: 7rem;
   display: flex;
@@ -109,7 +51,6 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: #020620;
-  /*background: linear-gradient(to right, #0288d1, #00b400);*/
   background: linear-gradient(to right, #3b82f6, #22c55e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -139,7 +80,6 @@ body {
   font-weight: weight;
   font-style: normal;
   background-color: #2563eb;
-  /*background-color: #305cde;*/
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -167,26 +107,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
-  /*background-color: black;*/
-  /*background-color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
-  /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-  /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
   /*.crm-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -205,18 +125,6 @@ body {
   .two-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }*/
-  /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-  /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
   }*/
   /*.crm-button-div {
     display: flex;
@@ -402,6 +310,12 @@ body {
   background-color: white;
   color: #039be5;
 }
+.project-section .crm-img {
+  width: 61rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0.1rem;
+}
 .project-section .mobile-img {
   height: 30rem;
   border-radius: 0.1rem;
@@ -457,15 +371,6 @@ body {
   justify-content: center;
   margin-bottom: 5rem;
   padding: 5rem 0;
-  /*background-color: #00154d;*/
-  /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
-  /*linear-gradient(
-      rgba(13, 21, 77, 0.5),
-      rgba(13, 21, 77, 0.5)
-    ),
-
-  */
 }
 .technology-section__h2-headline {
   margin: 0 auto 2rem auto;
