@@ -63,18 +63,6 @@ $section-border-color: #bdbdbd;
   color: $primary-color;
 }
 
-/*@mixin headline-button-properties {
-  border: 0.1rem solid white;
-  background-color: #222222;
-  color: #80d8ff;
-  border-radius: 0.1rem;
-}*/
-
-/*@mixin headline-button-hover-properties {
-  background-color: white;
-  border-color: black;
-}*/
-
 @mixin white-button-style {
   border: 2px solid #006db5;
   background-image: linear-gradient(white, #e0e0e0);
@@ -98,10 +86,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /*font-family: "Funnel Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;*/
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -109,46 +93,7 @@ body {
   background-color: #020620;
 }
 
-/*background-image: linear-gradient(
-    to right,
-    #e2e4e7,
-    white,
-    white,
-    white,
-    #e2e4e7
-  );*/
-
-/*.button {
-  @include center-content();
-  transition: all 0.2s ease-in-out;
-}
-
-.button:hover {
-  cursor: pointer;
-}
-
-.link {
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.no-underline:hover {
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}*/
-
-@media screen and (min-width: 1650px) {
+/*@media screen and (min-width: 1650px) {
   .head-section {
     margin-top: 7rem;
     display: flex;
@@ -188,7 +133,7 @@ a:hover {
     }
 
     &__focus-headline {
-      /*background: linear-gradient(to right, #0288d1, #00b400);*/
+     
       background: linear-gradient(to right, #3b82f6, #22c55e);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -218,7 +163,7 @@ a:hover {
       column-gap: 0.5rem;
       font-size: 1rem;
       background-color: $primary-color;
-      /*background-color: #305cde;*/
+   
       color: white;
       border: none;
       border-radius: 0.5rem;
@@ -248,9 +193,7 @@ a:hover {
   .project-section {
     @include column-flex-direction();
     margin-top: 5rem;
-    /*background-color: black;*/
-    /*background-color: white;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
+ 
 
     &__h2-headline {
       display: flex;
@@ -284,12 +227,7 @@ a:hover {
       column-gap: 1rem;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
+   
 
     &__crm-program {
       margin: 10rem 0;
@@ -306,18 +244,6 @@ a:hover {
       flex-direction: column;
       align-items: center;
     }
-
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
 
     &__headline-left,
     &__headline-right {
@@ -458,12 +384,12 @@ a:hover {
 
     .carousel-button {
       transform: translateY(-50%);
-      /*background-color: #006db5;*/
+     
       background-color: $primary-color;
       color: white;
       border: none;
       font-size: 24px;
-      /*padding: 10px;*/
+   
       width: 2.1rem;
       height: 3.3rem;
       border-radius: 0.1rem;
@@ -494,7 +420,7 @@ a:hover {
       color: #039be5;
     }
 
-    /*.crm-img {
+    .crm-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -512,26 +438,26 @@ a:hover {
   .two-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }*/
+  }
 
-    /*.crm-img {
+    .crm-img {
     width: 55rem;
     height: auto;
     object-fit: cover;
     border-radius: 0.1rem;
-  }*/
+  }
 
     .mobile-img {
       height: 30rem;
       border-radius: 0.1rem;
     }
 
-    /*&__button-div-left {
+    &__button-div-left {
     display: flex;
     margin: -4rem 0 0 10rem;
     column-gap: 7rem;
     width: 30rem;
-  }*/
+  }
 
     &__button-div-left,
     &__button-div-right {
@@ -540,12 +466,12 @@ a:hover {
       column-gap: 3rem;
     }
 
-    /*.crm-button-div {
+    .crm-button-div {
     display: flex;
     margin: -2rem 0 0 10rem;
     column-gap: 7rem;
     width: 30rem;
-  }*/
+  }
 
     .crm-button-div {
       display: flex;
@@ -585,16 +511,9 @@ a:hover {
     @include column-flex-direction();
     margin-bottom: 5rem;
     padding: 5rem 0;
-    /*background-color: #00154d;*/
+ 
 
-    /*border-radius: 0.2rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15), 0 1px 10px rgba(0, 0, 0, 0.1);*/
-    /*linear-gradient(
-      rgba(13, 21, 77, 0.5),
-      rgba(13, 21, 77, 0.5)
-    ),
   
-  */
 
     &__h2-headline {
       margin: 0 auto 2rem auto;
@@ -820,7 +739,7 @@ a:hover {
       margin: 0;
     }
   }
-}
+}*/
 
 @media screen and (max-width: 1650px) {
   .head-section {
@@ -845,9 +764,6 @@ a:hover {
       margin-top: 1rem;
       font-size: 1.7rem;
       color: white;
-    }
-
-    &__description-headline {
     }
 
     &__developer-name {
@@ -893,7 +809,6 @@ a:hover {
       column-gap: 0.5rem;
       font-size: 1rem;
       background-color: $primary-color;
-      /*background-color: #305cde;*/
       color: white;
       border: none;
       border-radius: 0.5rem;
@@ -955,13 +870,6 @@ a:hover {
       column-gap: 1rem;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-
     &__crm-program {
       width: 100%;
       margin: 5rem 0;
@@ -984,26 +892,11 @@ a:hover {
       margin-top: 5rem;
     }
 
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
-
     &__headline-left,
     &__headline-right {
       margin: 3rem 0;
       font-size: 1.8rem;
       color: white;
-    }
-
-    .shop-headline {
     }
 
     &__application-img-description-div-reverse {
@@ -1106,22 +999,28 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 43rem;
+      width: 42.7rem;
       margin: 0 5rem;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
-    &__shop-carousel,
+    &__shop-carousel {
+      width: 274px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
     &__website-carousel {
-      width: 267px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
     &__platform-carousel {
-      width: 277px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
@@ -1147,12 +1046,10 @@ a:hover {
 
     .carousel-button {
       transform: translateY(-50%);
-      /*background-color: #006db5;*/
       background-color: $primary-color;
       color: white;
       border: none;
       font-size: 24px;
-      /*padding: 10px;*/
       width: 2.1rem;
       height: 3.3rem;
       border-radius: 0.1rem;
@@ -1183,24 +1080,10 @@ a:hover {
       color: #039be5;
     }
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-
     .mobile-img {
       height: 30rem;
       border-radius: 0.1rem;
     }
-
-    /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
 
     &__button-div-left,
     &__button-div-right {
@@ -1209,19 +1092,9 @@ a:hover {
       column-gap: 3rem;
     }
 
-    /*.crm-button-div {
-    display: flex;
-    margin: -2rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
-
     .crm-button-div {
       display: flex;
       column-gap: 7rem;
-    }
-
-    .shop-button-div {
     }
 
     .italiener-button-div {
@@ -1518,37 +1391,15 @@ a:hover {
       flex-direction: column;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-
     &__online-shop {
       margin-top: 5rem;
     }
-
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
 
     &__headline-left,
     &__headline-right {
       margin: 3rem 0;
       font-size: 1.8rem;
       color: white;
-    }
-
-    .shop-headline {
     }
 
     &__application-img-description-div-reverse {
@@ -1648,22 +1499,28 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 34.5rem;
+      width: 32.5rem;
       margin: 0 5rem;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
-    &__shop-carousel,
+    &__shop-carousel {
+      width: 274px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
     &__website-carousel {
-      width: 267px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
     &__platform-carousel {
-      width: 277px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
@@ -1688,12 +1545,10 @@ a:hover {
 
     .carousel-button {
       transform: translateY(-50%);
-      /*background-color: #006db5;*/
       background-color: $primary-color;
       color: white;
       border: none;
       font-size: 24px;
-      /*padding: 10px;*/
       width: 2.1rem;
       height: 3.3rem;
       border-radius: 0.1rem;
@@ -1724,24 +1579,10 @@ a:hover {
       color: #039be5;
     }
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-
     .mobile-img {
       height: 30rem;
       border-radius: 0.1rem;
     }
-
-    /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
 
     &__button-div-left,
     &__button-div-right {
@@ -1749,13 +1590,6 @@ a:hover {
       display: flex;
       column-gap: 7rem;
     }
-
-    /*.crm-button-div {
-    display: flex;
-    margin: -2rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
 
     .platform-button-div,
     .shop-button-div,
@@ -1768,29 +1602,6 @@ a:hover {
       display: flex;
       column-gap: 7rem;
     }
-
-    /*&__link {
-      margin: 1rem 0;
-      width: 10rem;
-      height: 2rem;
-    }
-
-    &__button {
-      @include blue-button-style();
-      font-size: 1.2rem;
-      width: 14rem;
-      height: 2.5rem;
-      @include center-content();
-      border-radius: 0.2rem;
-    }
-
-    &__button:hover {
-      @include blue-button-hover-style();
-    }
-
-    &__link:hover {
-      text-decoration: none;
-    }*/
   }
 
   .technology-section {
@@ -1805,28 +1616,8 @@ a:hover {
       column-gap: 3.5rem;
     }
 
-    &__markup-language-div,
-    &__programming-language-div,
-    &__framework-div,
-    &__version-control-div,
-    &__database-technology-div {
-    }
-
     &__headline {
       font-size: 1.7rem;
-    }
-
-    &__subdivision-div {
-    }
-
-    &__html-div,
-    &__css-div,
-    &__scss-div,
-    &__javascript-div,
-    &__typescript-div,
-    &__react-div,
-    &__github-div,
-    &__supabase-div {
     }
 
     &__text {
@@ -2017,13 +1808,6 @@ a:hover {
       flex-direction: column;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-
     &__online-shop {
       margin-top: 5rem;
     }
@@ -2032,26 +1816,11 @@ a:hover {
       margin-top: 5rem;
     }
 
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
-
     &__headline-left,
     &__headline-right {
       margin: 3rem 0;
       font-size: 1.7rem;
       color: white;
-    }
-
-    .shop-headline {
     }
 
     &__application-img-description-div-reverse {
@@ -2155,22 +1924,28 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 18rem;
+      width: 17.8rem;
       margin: 0 3rem;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
-    &__shop-carousel,
+    &__shop-carousel {
+      width: 274px;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
     &__website-carousel {
-      width: 267px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
     &__platform-carousel {
-      width: 277px;
+      width: 276px;
       margin: 0;
       overflow: hidden;
       border-radius: 0.1rem;
@@ -2222,24 +1997,10 @@ a:hover {
       color: #039be5;
     }
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-
     .mobile-img {
       height: 30rem;
       border-radius: 0.1rem;
     }
-
-    /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
 
     &__button-div-left,
     &__button-div-right {
@@ -2259,24 +2020,10 @@ a:hover {
       column-gap: 5rem;
     }
 
-    /*&__link {
-      margin: 1rem 0;
-      width: 10rem;
-      height: 2rem;
-    }*/
-
     &__button {
       width: 11rem;
       font-size: 1rem;
     }
-
-    /*&__button:hover {
-      @include blue-button-hover-style();
-    }
-
-    &__link:hover {
-      text-decoration: none;
-    }*/
   }
 
   .technology-section {
@@ -2292,28 +2039,8 @@ a:hover {
       column-gap: 3.5rem;
     }
 
-    &__markup-language-div,
-    &__programming-language-div,
-    &__framework-div,
-    &__version-control-div,
-    &__database-technology-div {
-    }
-
     &__headline {
       font-size: 1.7rem;
-    }
-
-    &__subdivision-div {
-    }
-
-    &__html-div,
-    &__css-div,
-    &__scss-div,
-    &__javascript-div,
-    &__typescript-div,
-    &__react-div,
-    &__github-div,
-    &__supabase-div {
     }
 
     &__text {
@@ -2460,9 +2187,6 @@ a:hover {
     color: white;
   }
 
-  .impressum-headline {
-  }
-
   .impressum-info-div {
     &__impressum-legal-information {
       font-size: 1.4rem;
@@ -2528,37 +2252,15 @@ a:hover {
       flex-direction: column;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-
     &__online-shop {
       margin-top: 5rem;
     }
-
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
 
     &__headline-left,
     &__headline-right {
       margin: 3rem 0;
       font-size: 1.8rem;
       color: white;
-    }
-
-    .shop-headline {
     }
 
     &__application-img-description-div-reverse {
@@ -2651,7 +2353,13 @@ a:hover {
       border-radius: 0.1rem;
     }
 
-    &__shop-carousel,
+    &__shop-carousel {
+      width: 200px;
+      margin: 0 1.5rem;
+      overflow: hidden;
+      border-radius: 0.1rem;
+    }
+
     &__website-carousel {
       width: 200px;
       margin: 0 1.5rem;
@@ -2712,20 +2420,6 @@ a:hover {
       height: auto;
     }
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-
-    /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
-
     &__button-div-left,
     &__button-div-right {
       margin: 1rem auto 0 auto;
@@ -2744,10 +2438,6 @@ a:hover {
     &__button {
       font-size: 0.9rem;
     }
-
-    /*&__link:hover {
-      text-decoration: none;
-    }*/
   }
 
   .technology-section {
@@ -2762,28 +2452,8 @@ a:hover {
       column-gap: 3.5rem;
     }
 
-    &__markup-language-div,
-    &__programming-language-div,
-    &__framework-div,
-    &__version-control-div,
-    &__database-technology-div {
-    }
-
     &__headline {
       font-size: 1.5rem;
-    }
-
-    &__subdivision-div {
-    }
-
-    &__html-div,
-    &__css-div,
-    &__scss-div,
-    &__javascript-div,
-    &__typescript-div,
-    &__react-div,
-    &__github-div,
-    &__supabase-div {
     }
 
     &__text {
@@ -2806,9 +2476,6 @@ a:hover {
   .contact-section {
     margin: -5rem 0 5rem 0;
     padding: 0 5%;
-
-    &__generally-contact-div {
-    }
 
     &__headline {
       margin-top: 0.7rem;
@@ -2855,9 +2522,6 @@ a:hover {
       column-gap: 2rem;
     }
 
-    &__github-img {
-    }
-
     &__linkedin-img {
       margin-top: 0.1rem;
     }
@@ -2897,9 +2561,6 @@ a:hover {
     margin: 3rem 0 0 5rem;
   }
 
-  .to-main-side-icon {
-  }
-
   .impressum-headline {
     font-size: 1.7rem;
   }
@@ -2924,7 +2585,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 400px) {
+/*@media screen and (max-width: 300px) {
   .head-section {
     flex-direction: column;
     row-gap: 5rem;
@@ -2965,28 +2626,9 @@ a:hover {
       flex-direction: column;
     }
 
-    /*&__project-div {
-    margin: 3rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-  }*/
-
     &__online-shop {
       margin-top: 5rem;
     }
-
-    /*&__headline-left {
-    font-size: 1.8rem;
-    margin: 0 0 -3rem 15rem;
-    color: white;
-  }
-
-  &__headline-right {
-    font-size: 1.8rem;
-    margin: 0 0 -2.5rem 50rem;
-    color: white;
-  }*/
 
     &__headline-left,
     &__headline-right {
@@ -3050,22 +2692,6 @@ a:hover {
       column-gap: 1rem;
     }
 
-    .platform-technology-div,
-    .shop-technology-div {
-    }
-
-    .platform-technology-div {
-    }
-
-    .shop-technology-div {
-    }
-
-    .italiener-technology-div {
-    }
-
-    .crm-technology-div {
-    }
-
     &__application-technology {
       @include center-content();
       background-color: #334155;
@@ -3090,20 +2716,14 @@ a:hover {
     }
 
     &__crm-carousel {
-      width: 10.1rem;
+      width: 10.3rem;
       margin: 0 1rem;
       overflow: hidden;
       border-radius: 0.1rem;
     }
 
     &__shop-carousel,
-    &__website-carousel {
-      width: 200px;
-      margin: 0;
-      overflow: hidden;
-      border-radius: 0.1rem;
-    }
-
+    &__website-carousel,
     &__platform-carousel {
       width: 200px;
       margin: 0;
@@ -3162,19 +2782,6 @@ a:hover {
       height: auto;
     }
 
-    /*.crm-img {
-    width: 55rem;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.1rem;
-  }*/
-
-    /*&__button-div-left {
-    display: flex;
-    margin: -4rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
 
     &__button-div-left,
     &__button-div-right {
@@ -3183,12 +2790,7 @@ a:hover {
       flex-direction: column;
     }
 
-    /*.crm-button-div {
-    display: flex;
-    margin: -2rem 0 0 10rem;
-    column-gap: 7rem;
-    width: 30rem;
-  }*/
+   
 
     .platform-button-div,
     .shop-button-div,
@@ -3201,28 +2803,7 @@ a:hover {
       column-gap: 7rem;
     }
 
-    /*&__link {
-      margin: 1rem 0;
-      width: 10rem;
-      height: 2rem;
-    }
-
-    &__button {
-      @include blue-button-style();
-      font-size: 1.2rem;
-      width: 14rem;
-      height: 2.5rem;
-      @include center-content();
-      border-radius: 0.2rem;
-    }
-
-    &__button:hover {
-      @include blue-button-hover-style();
-    }
-
-    &__link:hover {
-      text-decoration: none;
-    }*/
+   
   }
 
   .technology-section {
@@ -3398,4 +2979,4 @@ a:hover {
       font-size: 1rem;
     }
   }
-}
+}*/

@@ -439,22 +439,28 @@ body {
   }
 
   &__crm-carousel {
-    width: 62.3rem;
+    width: 61rem;
     margin: 0 5rem;
     overflow: hidden;
     border-radius: 0.1rem;
   }
 
-  &__shop-carousel,
+  &__shop-carousel {
+    width: 274.2px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 0.1rem;
+  }
+
   &__website-carousel {
-    width: 267px;
+    width: 277px;
     margin: 0;
     overflow: hidden;
     border-radius: 0.1rem;
   }
 
   &__platform-carousel {
-    width: 277px;
+    width: 275px;
     margin: 0;
     overflow: hidden;
     border-radius: 0.1rem;
