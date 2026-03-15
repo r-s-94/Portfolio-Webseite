@@ -1,8 +1,10 @@
+//
+
 let currentCRMIndex = 0;
 
 function crmMoveSlide(step) {
   const images = document.querySelectorAll(
-    ".project-section__crm-carousel-images img"
+    ".project-section__crm-carousel-images img",
   );
   const totalImages = images.length;
 
@@ -19,7 +21,7 @@ function crmMoveSlide(step) {
   const offset = -currentCRMIndex * 100;
 
   document.querySelector(
-    ".project-section__crm-carousel-images"
+    ".project-section__crm-carousel-images",
   ).style.transform = `translateX(${offset}%)`;
 }
 
@@ -27,7 +29,7 @@ let currentShopIndex = 0;
 
 function shopMoveSlide(step) {
   const images = document.querySelectorAll(
-    ".project-section__shop-carousel-images img"
+    ".project-section__shop-carousel-images img",
   );
   const totalImages = images.length;
 
@@ -44,7 +46,7 @@ function shopMoveSlide(step) {
   const offset = -currentShopIndex * 100;
 
   document.querySelector(
-    ".project-section__shop-carousel-images"
+    ".project-section__shop-carousel-images",
   ).style.transform = `translateX(${offset}%)`;
 }
 
@@ -52,7 +54,7 @@ let currentWebsiteIndex = 0;
 
 function websiteMoveSlide(step) {
   const images = document.querySelectorAll(
-    ".project-section__website-carousel-images img"
+    ".project-section__website-carousel-images img",
   );
   const totalImages = images.length;
 
@@ -69,7 +71,7 @@ function websiteMoveSlide(step) {
   const offset = -currentWebsiteIndex * 100;
 
   document.querySelector(
-    ".project-section__website-carousel-images"
+    ".project-section__website-carousel-images",
   ).style.transform = `translateX(${offset}%)`;
 }
 
@@ -77,7 +79,7 @@ let currentPlatformIndex = 0;
 
 function platformMoveSlide(step) {
   const images = document.querySelectorAll(
-    ".project-section__platform-carousel-images img"
+    ".project-section__platform-carousel-images img",
   );
   const totalImages = images.length;
 
@@ -94,6 +96,6 @@ function platformMoveSlide(step) {
   const offset = -currentPlatformIndex * 100;
 
   document.querySelector(
-    ".project-section__platform-carousel-images"
+    ".project-section__platform-carousel-images",
   ).style.transform = `translateX(${offset}%)`;
 }
