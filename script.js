@@ -1,5 +1,3 @@
-//
-
 let currentCRMIndex = 0;
 
 function crmMoveSlide(step) {
